@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Siddhesh Shelar's Portfolio. Explore my projects, skills, and contact information.">
+    <meta name="author" content="Siddhesh Shelar">
+    <title>Siddhesh Shelar - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4cacaf;
+            color: white;
+            padding: 10px 0;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 70px;
+            background: url('./images/hero-bg.jpg') no-repeat center center/cover;
+            color: white;
+            position: relative;
+        }
+
+        .hero:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero * {
+            position: relative;
+            z-index: 2;
+        }
+
+        .skills .badge {
+            font-size: 1.1em;
+            padding: 10px 20px;
+            margin: 10px 5px;
+        }
+
+        .projects .card {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .projects .card:hover {
+            transform: scale(1.05);
+        }
+
+        .timeline {
+        position: relative;
+        padding: 20px 0;
+    }
+
+    .timeline-item {
+        margin-bottom: 20px;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .timeline-item h5 {
+        font-weight: bold;
+        color: #4cacaf;
+    }
+
+    .timeline-item h6 {
+        color: #6c757d;
+        margin-bottom: 10px;
+    }
+
+    .timeline-item p {
+        margin: 0;
+    }
+
+    .timeline-item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    .timeline-item:hover {
+        background: #f9f9f9;
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn {
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+
+        footer {
+            background-color: #4cacaf;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+
+        footer {
+        position: relative;
+        background: linear-gradient(45deg, #4cacaf, #2a2a72);
+        color: white;
+    }
+
+    footer h5 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    footer a {
+        color: white;
+        transition: color 0.3s ease-in-out;
+    }
+
+    footer a:hover {
+        color: #ffcb05;
+    }
+
+    footer i {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    footer i:hover {
+        transform: scale(1.2);
+        color: #ffcb05;
+    }
+
+    .list-unstyled li {
+        margin-bottom: 0.5rem;
+    }
+
+    .list-unstyled li a {
+        text-decoration: none;
+    }
+    </style>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1 data-aos="fade-up">Hello, I'm Siddhesh Shelar</h1>
+        <p data-aos="fade-up" data-aos-delay="200">A passionate developer building impactful projects.</p>
+        <a href="#projects" class="btn btn-light btn-lg mt-4" data-aos="fade-up" data-aos-delay="400">Explore My Work</a>
+    </div>
+
+    <section id="about" class="container text-center py-5">
+        <h2 class="mb-4" data-aos="fade-right">About Me</h2>
+        <p data-aos="fade-left">
+            I am a software developer specializing in <strong>Java</strong>, <strong>Python</strong>, <strong>React</strong>, and <strong>API development</strong>.
+            I enjoy creating solutions that make an impact, from a 3-tier rule engine application to a weather monitoring system.
+        </p>
+        <p data-aos="fade-left" data-aos-delay="200">
+            Beyond coding, I love trekking, solving puzzles, and keeping up with the latest tech trends.
+        </p>
+    </section>
+
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4" data-aos="fade-right">Experience</h2>
+            <div class="timeline">
+                <!-- Job 1 -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <h5>Front-End Web Developer Intern</h5>
+                    <h6>TCR Innovation (Sep-2022 - Nov-2022)</h6>
+
+                    <li>project using HTML, CSS, JavaScript & Bootstrap</li>
+                    <li>The Fashion-Point is a web-based shopping system for an existing shop</li>
+                    <li>As online shopping became a trend nowadays the regular shops are losing their customers to online brands. Customers have
+                        effortless shopping experience and saving time through shopping online. For competing with those online brands, If shops
+                        are providing an online portal.</li>
+                    
+                    
+                </div>
+                <!-- Job 2 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <h5>Web Development Intern</h5>
+                    <h6>Sumago Infotech (May-2019 - June-2019)</h6>
+                    <li>Freelanced in PHP web development, launching 2 projects that improved user experience by resolving issues for a 15% boost.</li>
+                    <li>Showcased PHP/MYSǪL skills, constructing robust DB web apps, raising query response efficiency by 5%. </li>
+                    <li>Mastered code optimization, achieving a 25% faster site load, 40% lower server response time, and enhanced user experience. </li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4" data-aos="fade-right">Education</h2>
+            <div class="timeline">
+                <!-- Degree 1 -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <h5>Bachelor of Engineering in Information Technology</h5>
+                    <h6>Sandip Institute Of Technology & Research Centre [SITRC] ,Nashik (July 2021 - June 2024)</h6>
+                    <p>Under Graduated with First Class.</p>
+                </div>
+                <!-- Degree 2 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <h5>Diploma in Computer Engineering</h5>
+                    <h6>Sandip Polytechnic, Nashik (July 2017 - May 2021)</h6>
+                    <p>Diploma Graduated with First Class with Distinction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section id="skills" class="skills bg-light text-center py-5">
+        <h2 class="mb-4" data-aos="fade-right">Skills</h2>
+        <div>
+            <span class="badge bg-primary" data-aos="zoom-in">Java</span>
+            <span class="badge bg-success" data-aos="zoom-in" data-aos-delay="100">JavaScript</span>
+            <span class="badge bg-info" data-aos="zoom-in" data-aos-delay="200">Angular</span>
+            <span class="badge bg-warning" data-aos="zoom-in" data-aos-delay="300">Spring Boot</span>
+            <span class="badge bg-dark" data-aos="zoom-in" data-aos-delay="400">Python</span>
+        </div>
+    </section>
+
+    <section id="resume" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4" data-aos="fade-right">My Resume</h2>
+            <p data-aos="fade-left">Explore my resume to learn more about my professional journey, skills, and achievements.</p>
+            <div class="d-flex justify-content-center align-items-center mt-4">
+                <!-- View Resume Button -->
+                <a href="./Mr. Siddhesh Shelar - Resume.pdf" target="_blank" class="btn btn-primary btn-lg me-3" data-aos="fade-up">View Resume</a>
+                
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="projects" class="projects py-5">
+        <div class="container">
+            <h2 class="mb-4 text-center" data-aos="fade-right">Projects</h2>
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="col-md-4">
+                    <div class="card" data-aos="zoom-in">
+                        <img src="./images/Rule Engine.webp" class="card-img-top" alt="Rule Engine Application">
+                        <div class="card-body">
+                            <h5 class="card-title">Rule Engine Application</h5>
+                            <p class="card-text">An efficient 3-tier rule engine application for user eligibility.</p>
+                            <a href="#" class="btn btn-primary">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Project 2 -->
+                <div class="col-md-4">
+                    <div class="card" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="./images/Whether monitoring.webp" class="card-img-top" alt="Weather Monitoring System">
+                        <div class="card-body">
+                            <h5 class="card-title">Weather Monitoring System</h5>
+                            <p class="card-text">A real-time weather monitoring application using OpenWeatherMap API for Indian metro cities, providing alerts and summaries.</p>
+                            <a href="#" class="btn btn-primary">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Project 3 -->
+                <div class="col-md-4">
+                    <div class="card" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="./images/Portfolio.webp" class="card-img-top" alt="Portfolio Website">
+                        <div class="card-body">
+                            <h5 class="card-title">Portfolio Website</h5>
+                            <p class="card-text">A responsive and interactive website showcasing my skills, projects, and contact information.</p>
+                            <a href="#" class="btn btn-primary">View Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-4 text-center" data-aos="fade-right">Contact Me</h2>
+            <div class="row">
+                <!-- Contact Form -->
+                <div class="col-md-6" data-aos="fade-up">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+    
+                <!-- Contact Information -->
+                <div class="col-md-6 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <h4>Let's Connect</h4>
+                    <p><i class="fas fa-envelope"></i> er.siddheshshelar@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91-8485893509</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Pune, India</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-md-4" data-aos="fade-right">
+                    <h5>About Me</h5>
+                    <p>
+                        I'm Siddhesh Shelar, a passionate developer dedicated to creating impactful projects. Let's connect!
+                    </p>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="col-md-4" data-aos="fade-up">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#about" class="text-light text-decoration-none">About</a></li>
+                        <li><a href="#skills" class="text-light text-decoration-none">Skills</a></li>
+                        <li><a href="#projects" class="text-light text-decoration-none">Projects</a></li>
+                        <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Social Media -->
+                <div class="col-md-4 text-center" data-aos="fade-left">
+                    <h5>Follow Me</h5>
+                    <a href="https://github.com/siddheshshelar0327" class="text-light me-3" target="_blank">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/siddheshshelar3509/" class="text-light me-3" target="_blank">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 Siddhesh Shelar. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
